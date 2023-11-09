@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Seguro No Pagamos Cooperativa</title>
+</head>
+
+<body>
+    <main class="container">
+        <section class="form-content">
+            <h1 id="title"></h1>
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <div class="input-group">
+                    <div class="input-field" id="nameInput">
+                        <input type="text" placeholder="Nombre" name="nombre" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Apellido" name="apellido" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="DNI" name="dni" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" placeholder="Email" name="email"  required>
+                    </div>
+                    <div class="input-field">
+                        <input type="telefono" placeholder="Teléfono" name="telefono"  required>
+                    </div>
+                    <div class="input-select">
+                        <select id="tipoDeSeguro" name="tds" onchange="mostrarPrecio()">
+                            <option>Tipos de Seguro</option>
+                            <option value="basico">Básico</option>
+                            <option value="intermedio">Intermedio</option>
+                            <option value="premium">Premium</option>
+                        </select>
+                        <input type="text" id="precio" name="precio" readonly>
+                    </div>
+                    <div class="button-field">
+                    <button id="submit" type="submit">Enviar</button>
+                </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>

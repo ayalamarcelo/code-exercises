@@ -17,7 +17,8 @@ dándole estilos al mismo con la utilización de CSS. Los datos que se deben sol
 * Básico
 * Intermedio
 * Premium
-Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostrar en pantalla el valor de cada uno:
+  
+## Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostrar en pantalla el valor de cada uno:
 
 * Basico: $500
 * Intermedio: $1000
